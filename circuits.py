@@ -24,7 +24,7 @@ class Circuit:
         R1, R2 = self.standard(R1), self.standard(R2)
         return R2 / (R1 + R2)
 
-    def v_div(self, V_s, R1, R2):
+    def v_div(self, R1, R2, Vs=1):
         '''
         Voltage Divider
         '''
