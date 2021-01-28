@@ -6,7 +6,7 @@ class Circuit:
         self.fraction_mode = fraction_mode
 
     def standard(self, x):
-        if self.fraction_mode:
+        if self.fraction_mode and not isinstance(x, Fraction):
             return Fraction(x)
         return x
 
